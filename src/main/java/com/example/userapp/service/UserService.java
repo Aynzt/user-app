@@ -22,6 +22,7 @@ public class UserService {
 		this.userRepo = userRepo;
 	}
 	
+	
 	public Long register(UserDTO userDTO) {		
 		// checking if user exists
 		if (userRepo.findByLogin(userDTO.getLogin()).isPresent()) {
